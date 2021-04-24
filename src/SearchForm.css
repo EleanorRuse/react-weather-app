@@ -1,0 +1,30 @@
+.search-form {
+  padding-top: 50px;
+  width: 0%;
+}
+.search-Button,
+.location-search {
+  color: #ffff;
+  font-size: 12px;
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
+  background-blend-mode: multiply;
+  box-shadow: 4px 1px 3px 1px #323232;
+}
+.search-text-input,
+.search-Button,
+.location-search {
+  border-radius: 17px;
+  padding: 12px;
+  margin-left: 10px;
+}
+
+#locationButton {
+  position: relative;
+  width: 42%;
+  left: 58%;
+}

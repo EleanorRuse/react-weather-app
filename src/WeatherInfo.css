@@ -1,0 +1,39 @@
+.infoBox ul {
+  list-style-type: none;
+  display: inline;
+  position: relative;
+  font-size: 23px;
+  top: 20px;
+}
+.visibility {
+  font-size: 23px;
+}
+.humidity {
+  font-size: 23px;
+}
+.wind {
+  font-size: 23px;
+}
+.maxTemp {
+  font-size: 23px;
+}
+.minTemp {
+  font-size: 23px;
+}
+.conditionBox,
+.infoBox {
+  position: relative;
+  color: #ffffff;
+  margin-top: 7px;
+  height: 233px;
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
+  background-blend-mode: multiply;
+  box-shadow: 6px 1px 3px 1px 323232;
+  border: 1px transparent #3d3b3b;
+  border-radius: 28px;
+}
