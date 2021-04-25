@@ -4,22 +4,22 @@
 }
 .conditionBox ul {
   list-style-type: none;
-  padding: 0;
 }
 .mainInfo {
-  position: relative;
-  text-align: center;
-  font-size: 57px;
+    position: relative;
+    margin-top: 5%;
+    left: 18%;
+    width: 57%;
+    font-size: 57px;
 }
 .units {
   position: relative;
+  
 }
 p {
   font-size: 31px;
-  padding-top: 12px;
-  margin-bottom: 1rem;
-  margin-left: -8px;
 }
+
 .temperature {
   font-size: 69px;
 }
@@ -43,8 +43,6 @@ a {
 .infoBox {
   position: relative;
   color: #ffffff;
-  margin-top: 7px;
-  height: 233px;
   background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
     linear-gradient(
       to top,
@@ -54,12 +52,13 @@ a {
   background-blend-mode: multiply;
   box-shadow: 6px 1px 3px 1px 323232;
   border: 1px transparent #3d3b3b;
-  border-radius: 28px;
 }
 
 .currentEmoji {
     position: relative;
-    width: 10%;
-    right: 40%;
+    right: 14%;
+    width: 42%;
+    padding-bottom: 1px;
 }
+
 

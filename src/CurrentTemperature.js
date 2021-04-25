@@ -10,15 +10,17 @@ export default function CurrentTemperature() {
             <p className="description"></p>
             <div className="row">
               <div className="col-5">
-                <img
+              </div>
+        
+              <div className="col-7">
+                <div className="mainInfo">
+        
+                     <img
                   src="http://openweathermap.org/img/wn/10d@2x.png"
                   alt=""
                   className="currentEmoji"
                 />
-              </div>
-              <div className="col-7">
-                <div className="mainInfo">
-                  <span className="units">
+                 <span className="units">
                     <strong className="temperature">18</strong>
                     <a href="/" id="celsius-link" className="active">
                       °C
@@ -27,13 +29,13 @@ export default function CurrentTemperature() {
                     <a href="/" id="fahrenhiet-link">
                       °F
                     </a>
-                  </span>
                   <ul className="feels-like">
                     <li>
                       Feels like: <span className="feel">16</span>
                     </li>
                   </ul>
-                </div>
+                    </span>               
+                     </div>
               </div>
             </div>
           </div>
