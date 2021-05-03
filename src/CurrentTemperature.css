@@ -6,12 +6,13 @@
   list-style-type: none;
 }
 .mainInfo {
-    position: relative;
-    margin-top: 5%;
+      position: relative;
+    margin-top: -8%;
     left: 18%;
     width: 57%;
     font-size: 57px;
-}
+  }
+
 .units {
   position: relative;
   
@@ -21,17 +22,26 @@ p {
 }
 
 .temperature {
-  font-size: 69px;
+  font-size: 57px;
 }
-a {
+
+ a { 
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.celsius
+.fahrenheit {
   text-decoration: none;
   color: #fff;
-  font-size: 22px;
+  font-size: 40px;
 }
+
+
 .feels-like {
-  position: relative;
-  text-align: center;
-  font-size: 17px;
+    position: relative;
+    font-size: 17px;
+    left: 46px;
 }
 .feel {
   position: relative;
@@ -43,22 +53,17 @@ a {
 .infoBox {
   position: relative;
   color: #ffffff;
-  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
-    linear-gradient(
-      to top,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(0, 0, 0, 0.25) 200%
-    );
-  background-blend-mode: multiply;
-  box-shadow: 6px 1px 3px 1px 323232;
+background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+  background-blend-mode: multiply;  
+box-shadow: 6px 1px 3px 1px 323232;
   border: 1px transparent #3d3b3b;
 }
 
 .currentEmoji {
     position: relative;
-    right: 14%;
-    width: 42%;
-    padding-bottom: 1px;
+    width: 50%;
+    right: 33px;
+    top: 52px;
 }
 
 

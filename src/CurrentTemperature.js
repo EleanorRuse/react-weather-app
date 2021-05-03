@@ -22,11 +22,11 @@ export default function CurrentTemperature() {
                 />
                  <span className="units">
                     <strong className="temperature">18</strong>
-                    <a href="/" id="celsius-link" className="active">
+                    <a href="/" id="celsius-link" className="celsius">
                       °C
                     </a>
                     |
-                    <a href="/" id="fahrenhiet-link">
+                    <a href="/" id="fahrenhiet-link" className="fahrenhiet">
                       °F
                     </a>
                   <ul className="feels-like">
