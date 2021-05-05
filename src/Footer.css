@@ -1,4 +1,9 @@
 a {
     position:relative;
     font-size:13px;
+    color:rgb(109, 109, 119);
+}
+
+small {
+    color:#FFF;
 }

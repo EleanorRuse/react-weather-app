@@ -26,7 +26,7 @@ export default function CurrentTemperature() {
                       °C
                     </a>
                     |
-                    <a href="/" id="fahrenhiet-link" className="fahrenhiet">
+                    <a href="/" id="fahrenheit-link" className="fahrenheit">
                       °F
                     </a>
                   <ul className="feels-like">

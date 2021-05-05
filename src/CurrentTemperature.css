@@ -8,7 +8,7 @@
 .mainInfo {
       position: relative;
     margin-top: -8%;
-    left: 18%;
+    right: 13%;
     width: 57%;
     font-size: 57px;
   }
@@ -53,16 +53,12 @@ p {
 .infoBox {
   position: relative;
   color: #ffffff;
-background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
-  background-blend-mode: multiply;  
-box-shadow: 6px 1px 3px 1px 323232;
-  border: 1px transparent #3d3b3b;
 }
 
 .currentEmoji {
     position: relative;
-    width: 50%;
-    right: 33px;
+    width: 49%;
+    left: 20px;
     top: 52px;
 }
 

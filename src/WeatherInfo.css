@@ -1,10 +1,12 @@
 .infoBox ul {
-  list-style-type: none;
-  display: inline;
-  position: relative;
-  font-size: 23px;
-  top: 4px;
+    list-style-type: none;
+    display: inline;
+    position: relative;
+    font-size: 23px;
+    bottom: 146px;
+    left: 108px;
 }
+
 .visibility {
   font-size: 23px;
 }
@@ -19,10 +21,4 @@
 }
 .minTemp {
   font-size: 23px;
-}
-.conditionBox,
-.infoBox {
-  margin-top: 7px;
-  height: 200px;
-  border-radius: 28px;
 }
