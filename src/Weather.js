@@ -5,6 +5,7 @@ import WeatherTemperature from "./WeatherTemperature";
 import  "./Weather.css"
 
 export default function Weather(props) {
+    const [city, setCity] = useState(props.defaultCity);
     const [weatherData, setWeatherData] = useState({ready: false });
     function handleResponse(response) {
         setWeatherData({
@@ -15,33 +16,51 @@ export default function Weather(props) {
             humidity: response.data.main.humidity,
             wind: response.data.wind.speed,
             city: response.data.name,
-            iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
         });
 
     }
 
+function search() {
+const apiKey = `99249e6036b7cd3ba4446e3f8c097e60`;
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+axios.get(apiUrl).then(handleResponse);
+}
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        search();
+    }
+ 
+function handleChange(event){
+setCity(event.target.value);
+}
+
     if(weatherData.ready) {
 return (
     <div className="Weather">
-        <form>
+        <form onSubmit={handleSubmit}>
             <div className="row">
                 <div className="col-9">
-            <input type="search"placeholder="Enter a city..." className="form-control"/>
+            <input type="search"
+            placeholder="Enter a city..." 
+            className="form-control"
+            autoFocus="on"
+            onChange={handleChange}/>
             </div>
             <div className="col-3">
-<input type="submit" value="Search" className="btn btn-primary" />
+<input type="submit" 
+value="Search" 
+className="btn btn-primary" w-100/>
         </div>
         </div>        
         </form>
         <WeatherTemperature data={weatherData}/>
     </div> 
 );
-} else {
-    
-   const apiKey = `99249e6036b7cd3ba4446e3f8c097e60`;
-   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
-axios.get(apiUrl).then(handleResponse);
 
+} else {
+search();
 return "Loading...";
  }
 }
