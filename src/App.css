@@ -9,24 +9,13 @@ body {
   position: relative;
   justify-content: center;
 }
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  height: 100%;
-  position: relative;
-   background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
-    linear-gradient(
-      to top,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(0, 0, 0, 0.25) 200%
-    );
-  background-blend-mode: multiply;
-  box-shadow: 6px 1px 3px 1px 323232;
-  border: 1px transparent #3d3b3b;
-  border-radius: 28px;
+
+.App {
+  max-width: 600px;
+  margin: 30px auto;
 }
 
-html {
-  min-height: 100%;
+.App footer {
+  font-size: 11px;
+  margin: 10px 0;
 }
