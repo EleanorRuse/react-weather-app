@@ -6,11 +6,10 @@
   list-style-type: none;
 }
 .mainInfo {
-      position: relative;
-    margin-top: -8%;
-    right: 13%;
-    width: 57%;
-    font-size: 57px;
+position: relative;
+    margin-top: 21%;
+    right: 100%;
+    width: 182%;
   }
 
 .units {
@@ -22,7 +21,7 @@ p {
 }
 
 .temperature {
-  font-size: 57px;
+    font-size: 55px;
 }
 
  a { 
@@ -41,7 +40,7 @@ p {
 .feels-like {
     position: relative;
     font-size: 17px;
-    left: 46px;
+    left: 39px;
 }
 .feel {
   position: relative;
@@ -58,8 +57,34 @@ p {
 .currentEmoji {
     position: relative;
     width: 49%;
-    left: 20px;
-    top: 52px;
+    left: 10px;
+    top: 1px;
 }
 
+.infoBox ul {
+    list-style-type: none;
+    display: inline;
+    position: relative;
+    font-size: 23px;
+    bottom: 213px;
+    left: 212px;
+}
+
+
+
+.visibility {
+  font-size: 23px;
+}
+.humidity {
+  font-size: 23px;
+}
+.wind {
+  font-size: 23px;
+}
+.maxTemp {
+  font-size: 23px;
+}
+.minTemp {
+  font-size: 23px;
+}
 

@@ -1,6 +1,7 @@
-import "./WeatherInfo.css";
+import React from "react";
+import "./WeatherTemperature.css";
 
-export default function WeatherInfo() {
+export default function WeatherTemperature() {
   return (
     <div className="col-12 col-sm-6">
       <div className="infoBox">
@@ -25,3 +26,5 @@ export default function WeatherInfo() {
     </div>
   );
 }
+
+
