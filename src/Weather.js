@@ -14,11 +14,11 @@ export default function Weather(props) {
             description: response.data.weather[0].description,
             temperature: Math.round(response.data.main.temp), 
             humidity: response.data.main.humidity,
+            feelsLike: Math.round(response.data.main.feels_like),
             wind: response.data.wind.speed,
             city: response.data.name,
             icon: response.data.weather[0].icon
         });
-
     }
 
 function search() {
@@ -27,10 +27,10 @@ const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=
 axios.get(apiUrl).then(handleResponse);
 }
 
-    function handleSubmit(event) {
-        event.preventDefault();
-        search();
-    }
+function handleSubmit(event) {
+event.preventDefault();
+search();
+ }
  
 function handleChange(event){
 setCity(event.target.value);
@@ -51,7 +51,7 @@ return (
             <div className="col-3">
 <input type="submit" 
 value="Search" 
-className="btn btn-primary" w-100/>
+className="btn btn-primary" />
         </div>
         </div>        
         </form>

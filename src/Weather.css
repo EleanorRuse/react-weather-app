@@ -3,11 +3,11 @@
   border: 1px solid #dadde1;
   padding: 16px;
   border-radius: 4px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .Weather h1 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 100;
   margin: 20px 0 0 0;
   line-height: 29px;
@@ -27,7 +27,7 @@
 
 .Weather .temperature {
   font-weight: bold;
-  color: rgb(33, 33, 33);
+  color: rgb(255, 255, 255);
   font-size: 64px;
   margin-left: 168px;
   font-weight: 400;
@@ -35,10 +35,11 @@
 
 .Weather canvas {
   margin-right: 20%;
+  bottom:10%;
 }
 
 .Weather .unit {
-  color: rgb(33, 33, 33);
+  color: rgb(231, 225, 225);
   font-size: 16px;
   font-weight: 400;
   position: relative;
