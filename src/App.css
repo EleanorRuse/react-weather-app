@@ -10,6 +10,11 @@ body {
   justify-content: center;
 }
 
+.container {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius:20px;
+}
+
 .App {
   max-width: 600px;
   margin: 30px auto;
