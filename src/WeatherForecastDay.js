@@ -24,7 +24,7 @@ let days=["Sun", "Mon", "Tues", "Weds", "Thurs", "Fri", "Sat", "Sun"]
     return   (
 <div>
 <div className="WeatherForecast-day">{day()}</div>
-<WeatherIcon code={props.data.weather[0].icon} size={36}/>
+<WeatherIcon code={props.data.weather[0].icon} size={38}/>
 <div className="WeatherForecast-temperature">
 <span className="WeatherForecast-temperature-max">{maxTemperature()}° 
  </span> 

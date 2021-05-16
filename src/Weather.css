@@ -27,20 +27,21 @@
 .Weather .temperature {
 color: rgb(255, 255, 255);
     font-size: 37px;
-    margin-left: 51px;
+    margin-right: 100px;
     font-weight: 400;
 }
 
 .Weather canvas {
-margin:0;
+    margin-right: -4%;
+    margin-top: -7%;
 }
 
 .Weather .unit {
-    color: rgb(231, 225, 225);
+color: #FFFF;
     font-size: 23px;
     font-weight: 400;
     position: relative;
     line-height: 1;
-    left: 5px;
-    bottom: 19px;
+    right: 97px;
+    bottom: 11px;
 }
